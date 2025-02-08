@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Cronrox";
+  src: url("../public/Fonts/Cronrox.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root{
+  --color-gris:#293035;
+  --color-naranja: #ED5F44;
+}

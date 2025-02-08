@@ -1,0 +1,229 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-gris);
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+    height: 80vh;
+    display: flex;
+    gap: 1px;
+    padding-top: 30px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 0%;
+    color: white;
+    font-family: "Cronrox", sans-serif;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.texto p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.texto h1 {
+    font-size: 8vw;
+    margin: 0;
+    padding: 0;
+}
+
+.texto h2 {
+    font-size: 8vw;
+    margin: 0;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    line-height: 4.5rem;
+}
+
+.textoborder{
+    display: flex;
+    flex-direction: column;
+}
+
+.foto {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 26vw;
+}
+.borde{
+    background-color: var(--color-naranja);
+    width: 20%;
+    height: 5px;
+    margin-top: 1%;
+}
+
+.listaredesboton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 5em;
+    width: 80%;
+}
+.cv{
+    font-size: 2em;
+    text-align: end;
+    font-family: "Cronrox", sans-serif;
+    color: var(--color-naranja);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-right: 2em;
+}
+.flecha{
+    width: 30px;
+    height: 30px;
+    transition: 0.3s ease;
+}
+
+.cv:hover .flecha{
+    transform: translateX(-9px);
+}
+
+.listaredes{
+    display: flex;
+    gap: 1.2em;
+    list-style: none;
+}
+.red{
+    width: 40px;
+    height: 40px;
+    color: var(--color-naranja);
+    transition: 0.4s ease;
+    border-radius: 25px;
+    padding: 8px;
+    border: none;
+}
+
+.red:hover{
+    background: White;
+    color: var(--color-gris);
+    box-shadow: 0 0 5px White, 0 0 50px White, 0 0 75px White ;
+    
+}
+@media (max-width:1024px){
+    .listaredesboton{
+        width: 90%;
+    }
+    .cv{
+        font-size: 1.5em;
+    }
+    .foto{
+        width: 60vh;
+    }
+    .listaredes{
+        gap: 0.8em;
+    }
+    .red{
+        width: 30px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .contenedor{
+        height: 100vh;
+    }
+    .listaredesboton{
+        margin-top: 1%;
+        width: 95%;
+    }
+    .cv{
+        margin-right: 0%;
+        font-size: 1.2em;
+    }
+    .flecha{
+        width: 20px;
+        height: 20px;
+    }
+    .red{
+        width: 20px;
+        height: 20px;
+    }
+    .listaredes{
+        margin-left: 0%;
+        gap: 0.5em;
+        flex-direction: column;
+    }
+    .contenedor{
+        height: 60vh;
+    }
+    .foto{
+        width: 42vh;
+    }
+    .texto h1{
+        margin-top: 10px;
+        font-size: 2.5em;
+    }
+    .texto h2{
+        font-size: 2.2em;
+        line-height: 3rem;
+    }
+}
+
+@media (max-width: 482px) {
+    .foto{
+        width: 40vh;
+        bottom: 0%;
+    }
+    .cv{
+        font-size: 1em;
+    }
+    .flecha{
+        width: 15px;
+        height: 15px;
+    }
+    .foto{
+        width: 35vh;
+        left: 60%;
+        bottom: 10;
+    }
+    /* .listaredes{
+        display: none;
+    }
+    .cv{
+        
+    } */
+    .contenedor{
+        /* display: grid; */
+        padding-top: 3%;
+        height: 60vh;
+    }
+    .listaredesboton{
+        margin-top: 10%;
+        width: 100%;
+        justify-content: left;
+    }
+    .listaredes{
+        margin: 0%;
+    }
+    .cv{
+        display: none;
+        margin: 0;
+    }
+    .texto h1{
+        font-size: 3em;
+    }
+
+    .texto h2{
+        font-size: 3.2em;
+    }
+    .red{
+        width: 40px;
+        height: 40px;
+    }
+}
+

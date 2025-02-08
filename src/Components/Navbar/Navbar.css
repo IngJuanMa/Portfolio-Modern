@@ -1,0 +1,51 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-gris);
+    gap: 20%;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.logo{
+    width: 60px;
+    padding: 1%;
+    border-radius: 250px;
+    margin-left: 3%;
+}
+
+.listanav{
+    display: flex;
+    gap: 30px;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 3%;
+}
+
+.lista{
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+}
+.lista:hover{
+    color: var(--color-naranja);
+}
+.menu{
+    display: none;
+}
+
+@media (max-width:480px){
+    .lista{
+        display: none;
+    }
+    .menu{
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .logo{
+        width: 40px;
+    }
+}
