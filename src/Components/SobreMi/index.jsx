@@ -8,19 +8,35 @@ import { FaCss3Alt } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { SiFramer } from "react-icons/si";
 import { FaGlobe, FaFlagUsa } from "react-icons/fa";
+import { MdDesignServices } from "react-icons/md";
+import { IoCodeSlash } from "react-icons/io5";
+import { FaRegLightbulb } from "react-icons/fa";
+
+
+
 
 
 const SobreMi = () => {
   return (
     <main className='c-sobremi'>
       <section className='historia'>
-        <h1>Sobre Mi</h1>
-        <p>Soy ingeniero agroindustrial y desarrollador front-end especializado en React + Vite.
+        <h1>About Me</h1>
+        <h4 className='tituloinge'>Soy ingeniero agroindustrial y desarrollador front-end especializado en React + Vite.</h4>
+        <p>
           Me encanta transformar ideas en sitios web funcionales y responsivos.
           Además, he trabajado en proyectos freelance diseñando plataformas para pequeños negocios,
           optimizando su presencia digital.
         </p>
-        <h3>Tecnologías</h3>
+        <div className='contenedorHabili'>  
+          <div className='habili'><aside>Diseño Web</aside><MdDesignServices color="white" size={40}/></div>
+          <div className='habili'><aside>Desarollo Web</aside><IoCodeSlash color="white" size={40}/></div>
+          <div className='habili'><aside>Branding Web</aside><FaRegLightbulb color="white" size={40}/></div>
+        </div>
+      </section>
+
+
+      <section className='idiomas'>
+      <h3 className='h3'>Tecnologías</h3>
         <div>
           <div className='listatecnologías'>
             <li className='tecnología'>
@@ -28,7 +44,7 @@ const SobreMi = () => {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 8, repeat: Infinity, ease: "linear" }}>
-                <FaReact className='logoreact' color="#61DAFB" />
+                <FaReact className='logoreact' color="white" />
               </motion.div>
             </li>
 
@@ -37,7 +53,7 @@ const SobreMi = () => {
               <motion.div
                 animate={{ y: [0, -5, 0] }}
                 transition={{ repeat: Infinity, duration: 2 }}>
-                <FaJsSquare className='logojs' color='#F7DF1E' />
+                <FaJsSquare className='logojs' color='white' />
               </motion.div>
             </li>
 
@@ -46,7 +62,7 @@ const SobreMi = () => {
               <motion.div
                 animate={{ rotate: [0, -5, 5, 0] }}
                 transition={{ repeat: Infinity, duration: 2 }}>
-                <FaHtml5 className='logohtml' color='#E34F26' />
+                <FaHtml5 className='logohtml' color='white' />
               </motion.div>
             </li>
 
@@ -55,7 +71,7 @@ const SobreMi = () => {
               <motion.div
                 animate={{ x: [0, -5, 5, -5, 5, 0] }}
                 transition={{ repeat: Infinity, duration: 3 }}>
-                <FaCss3Alt className='logocss' color='#1572B6' />
+                <FaCss3Alt className='logocss' color='white' />
               </motion.div>
             </li>
 
@@ -64,7 +80,7 @@ const SobreMi = () => {
               <motion.dev
                 animate={{ rotate: [0, -5, 5, 0] }}
                 transition={{ repeat: Infinity, duration: 2 }}>
-                <FaGitAlt className='logogit' color='#F05032' />
+                <FaGitAlt className='logogit' color='white' />
               </motion.dev>
             </li>
 
@@ -73,25 +89,21 @@ const SobreMi = () => {
               <motion.dev
                 animate={{ y: [0, -5, 0] }}
                 transition={{ repeat: Infinity, duration: 2 }}>
-                <SiFramer className='logoframer' color='#E3008C' />
+                <SiFramer className='logoframer' color='white' />
               </motion.dev>
             </li>
           </div>
         </div>
-      </section>
-
-
-      <section className='idiomas'>
         <h3 className='h3'>Idiomas</h3>
         <div className="idiomas-container">
-          <div className="card">
+          <div className="cardEspañol">
             <img src='/colombia.svg' className="icon espanol" />
             <h3>Español</h3>
             <p>Avanzado <br /> (Nativo) </p>
           </div>
 
           {/* Inglés */}
-          <div className="card">
+          <div className="cardIngles">
             <img src='/us.svg' className="icon ingles" />
             <h3>Inglés</h3>
             <p>Básico <br /> (En progreso)</p>

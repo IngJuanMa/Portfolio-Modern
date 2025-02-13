@@ -10,24 +10,67 @@
     flex-direction: column;
 }
 .historia h1{
-    font-family: var(--font-Cro);
-    color: var(--color-naranja);
+    font-family: var(--font-ragille);
     text-align: center;
+    color: var(--color-naranja);
     margin-bottom: 5px;
+    font-size: 1em;
 }
 
 .historia p{
-    font-family: 'Courier New', Courier, monospace; 
+    font-family:var(--font-EB); 
     color: white;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 0.9em;
+    margin-top: 15px;
+    font-weight: 200;
 }
 
 .historia h3{
     color: var(--color-naranja);
-    font-family: var(--font-Cro);
+    font-family: var(--font-ragille);
     text-align: center;
+    margin-top: 30px;
+    font-size: 1em;
 }
+
+.tituloinge{
+  font-family:var(--font-EB);
+  font-size: 1.6em;
+  font-weight: 600;
+  margin: 15px 0;
+  color: white;
+  text-align: center;
+}
+
+.contenedorHabili{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.habili{
+  background-color: #262629;
+  padding: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  font-family: var(--font-EB);
+  color: white;
+  margin: 3px;
+  font-size: 1.4em;
+  height: 13vh;
+  width: 70%;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 2px rgba(255,255,255,0.65);
+}
+
 .listatecnologías{
     list-style: none;
     display: flex;
@@ -40,13 +83,13 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    font-family:'Courier New', Courier, monospace;
+    font-family:var(--font-EB);
     justify-content: center;
     font-size: 1em;
     color: white;
     gap: 5px;
     padding: 0;
-    margin: 0;
+    margin: 18px 0;
 }
 .logoreact,
 .logojs,
@@ -65,8 +108,10 @@
 
 .h3{
     text-align: center;
-    font-family: var(--font-Cro);
+    font-family: var(--font-ragille);
     color: var(--color-naranja);
+    margin-top: 30px;
+    font-size: 1em;
 }
 
 /* Contenedor principal */
@@ -78,18 +123,31 @@
   }
   
   /* Estilos de las tarjetas */
-  .card {
+  .cardEspañol {
     background: #292926;
-    color: var(--color-gris);
+    color: white;
     padding: 20px;
-    width: 150px;
+    width: 30%;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    font-family:'Courier New', Courier, monospace;
-    background-image: url(/public/colombia.svg);
-    background-position: 75% 1%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, #111213),linear-gradient(rgba(20, 22, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/public/colombia.svg);
+    background-position: 0% 5%;
+  
+  }
+  .cardIngles{
+    background: #292926;
+    color: white;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    font-family:var(--font-EB);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, #111213),linear-gradient(rgba(1, 21, 26, 0.7), rgba(0, 0, 0, 0.7)), url(/public/us.svg);
+    background-position: 0% 5%;
   }
   
   /* Efecto de escala al pasar el mouse */
@@ -114,13 +172,52 @@
   
   /* Estilos de los textos */
   h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-    
+    font-family: var(--font-EB);
+    font-size: 1.3em;
+    margin-bottom: 1px;
+    margin-top: 2px;
   }
   
   p {
-    font-size: 14px;
-    
+    font-size: 0.8em;
+    font-family: var(--font-EB);
+  }
+
+  @media (min-width:768px){
+    .c-sobremi{
+      flex-direction: row;
+      box-sizing: border-box;
+      padding: 2% 8%;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5%;
+    }
+    .tituloinge{
+      font-size: 1em;
+    }
+    .historia p{
+      font-size: 0.6em;
+    }
+    .habili{
+      font-size: 0.8em;
+      width: 90%;
+    }
+    .historia{
+      width: 35%;
+    }
+  }
+
+  @media (min-width:1024px){
+    .tituloinge{
+      font-size: 1.4em;
+    }
+    .historia p{
+      font-size: 1em;
+    }
+    .habili{
+      font-size: 1em;
+      width: 60%;
+      height: 10vh;
+    }
   }
   
