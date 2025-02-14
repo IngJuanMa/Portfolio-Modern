@@ -4,7 +4,7 @@
     align-items: center;
     background-color: var(--color-gris);
     gap: 20%;
-    font-family:'Courier New', Courier, monospace;
+    font-family:var(--font-EB);
 }
 
 .logo{
@@ -24,7 +24,7 @@
 }
 
 .lista{
-    font-size: 0.7em;
+    font-size: 0.8em;
     text-decoration: none;
     color: white;
 }

@@ -45,30 +45,39 @@
 
 .contenedorHabili{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
   margin-top: 20px;
 }
 
+.contenedorHabili .infocard{
+  font-size: 0.7em;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.contenedorHabili aside{
+  margin-top: 10px;
+  font-size: 1.3em;
+}
+
 .habili{
   background-color: #262629;
-  padding: 10px;
+  padding: 4px 10px;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  gap: 10%;
   font-family: var(--font-EB);
   color: white;
   margin: 3px;
-  font-size: 1.4em;
-  height: 13vh;
-  width: 70%;
+  height: 25vh;
+  width: 40%;
   text-align: center;
-  border-radius: 5px;
-  box-shadow: 0px 0px 6px 2px rgba(255,255,255,0.65);
+  box-shadow: 2px 2px 5px 0px var(--color-naranja);
 }
 
 .listatecnologías{
@@ -117,7 +126,7 @@
 /* Contenedor principal */
 .idiomas-container {
     display: flex;
-    gap: 20px;
+    gap: 5px;
     justify-content: center;
     margin-top: 20px;
   }
@@ -129,7 +138,7 @@
     padding: 20px;
     width: 30%;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 1px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, #111213),linear-gradient(rgba(20, 22, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/public/colombia.svg);
@@ -142,7 +151,7 @@
     padding: 20px;
     width: 30%;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 1px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     font-family:var(--font-EB);
@@ -187,10 +196,10 @@
     .c-sobremi{
       flex-direction: row;
       box-sizing: border-box;
-      padding: 2% 8%;
-      justify-content: space-between;
+      padding: 1% 8%;
+      justify-content: center;
       align-items: center;
-      gap: 5%;
+      gap: 10px;
     }
     .tituloinge{
       font-size: 1em;
@@ -203,9 +212,12 @@
       width: 90%;
     }
     .historia{
-      width: 35%;
+      width: 50%;
     }
-  }
+    .idiomas{
+    width: 50%;  
+    }
+  } 
 
   @media (min-width:1024px){
     .tituloinge{
@@ -215,9 +227,11 @@
       font-size: 1em;
     }
     .habili{
-      font-size: 1em;
-      width: 60%;
-      height: 10vh;
+      width: 26%;
+      box-shadow: none;
+    }
+    .contenedorHabili{
+      gap: 2px;
     }
   }
   

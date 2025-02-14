@@ -27,17 +27,31 @@ const SobreMi = () => {
           Además, he trabajado en proyectos freelance diseñando plataformas para pequeños negocios,
           optimizando su presencia digital.
         </p>
-        <div className='contenedorHabili'>  
-          <div className='habili'><aside>Diseño Web</aside><MdDesignServices color="white" size={40}/></div>
-          <div className='habili'><aside>Desarollo Web</aside><IoCodeSlash color="white" size={40}/></div>
-          <div className='habili'><aside>Branding Web</aside><FaRegLightbulb color="white" size={40}/></div>
+        <div className='contenedorHabili'>
+          <div className='habili'>
+            <p className='infocard'>Diseño interfaces atractivas y funcionales con un enfoque en la usabilidad y la estética</p>
+            <aside>Diseño Web</aside>
+            <MdDesignServices color="#ED5F44" size={40} />
+          </div>
+
+          <div className='habili'>
+            <p className='infocard'>Creo sitios web optimizados, interactivos y responsivos utilizando tecnologías modernas</p>
+            <aside>Desarollo Web</aside>
+            <IoCodeSlash color="#ED5F44" size={40} />
+          </div>
+
+          <div className='habili'>
+            <p className='infocard'>Desarrollo identidades visuales sólidas para marcas, asegurando coherencia y diferenciación</p>
+            <aside>Branding Web</aside>
+            <FaRegLightbulb color="#ED5F44" size={40} />
+          </div>
         </div>
       </section>
 
 
       <section className='idiomas'>
-      <h3 className='h3'>Tecnologías</h3>
-        <div>
+        <h3 className='h3'>Tecnologías</h3>
+        {/* <div>
           <div className='listatecnologías'>
             <li className='tecnología'>
               <aside>React</aside>
@@ -93,7 +107,7 @@ const SobreMi = () => {
               </motion.dev>
             </li>
           </div>
-        </div>
+        </div> */}
         <h3 className='h3'>Idiomas</h3>
         <div className="idiomas-container">
           <div className="cardEspañol">
