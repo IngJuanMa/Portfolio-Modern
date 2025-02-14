@@ -31,7 +31,7 @@
     text-align: center;
     font-family: var(--font-EB);
     font-weight: 900;
-    color: white;
+    color: var(--color-naranja);
 }
 
 .c-im-proyec-uni p{
