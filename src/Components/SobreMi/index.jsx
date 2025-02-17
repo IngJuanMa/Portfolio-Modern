@@ -51,7 +51,7 @@ const SobreMi = () => {
 
       <section className='idiomas'>
         <h3 className='h3'>Tecnologías</h3>
-        {/* <div>
+        <div>
           <div className='listatecnologías'>
             <li className='tecnología'>
               <aside>React</aside>
@@ -107,7 +107,7 @@ const SobreMi = () => {
               </motion.dev>
             </li>
           </div>
-        </div> */}
+        </div>
         <h3 className='h3'>Idiomas</h3>
         <div className="idiomas-container">
           <div className="cardEspañol">

@@ -1,0 +1,111 @@
+
+/* ContactSection.css */
+.contact-section {
+    position: relative;
+  overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #121B1D;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: var(--font-RB);
+    box-sizing: border-box;
+  }
+  
+  .contact-title {
+    font-size: 1em;
+    color: var(--color-naranja);
+    margin-bottom: 10px;
+    font-family: var(--font-ragille);
+  }
+  
+  .contact-description {
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    box-shadow: 2px 2px 5px 0px var(--color-naranja);
+    border-radius: 3px;
+    font-size: 1em;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+  }
+  
+  .contact-form textarea {
+    height: 120px;
+    resize: none;
+  }
+  
+  .contact-button {
+    background-color: var(--color-naranja);
+    font-family:'Courier New', Courier, monospace;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #cf7c16;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .contact-title {
+      font-size: 2em;
+    }
+    
+    .contact-description {
+      font-size: 1em;
+    }
+    
+    .contact-form {
+      width: 90%;
+      margin: 0%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-title {
+      font-size: 1.8em;
+    }
+    
+    .contact-description {
+      font-size: 0.9em;
+    }
+    .contact-form{
+        width: 90%;
+        margin: 0;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 0.9em;
+    }
+    
+    .contact-button {
+      font-size: 1em;
+    }
+  }
+  

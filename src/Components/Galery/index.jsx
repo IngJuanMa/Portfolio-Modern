@@ -3,7 +3,7 @@ import { motion, useMotionValue, useAnimation, useTransform } from "framer-motio
 import "./RollingGallery.css";
 
 
-const RollingGallery = ({ autoplay = false, pauseOnHover = false, images = [], IMGS}) => {
+const RollingGallery = ({ autoplay = false, pauseOnHover = false, images = [], IMGS }) => {
   images = IMGS;
   const [isScreenSizeSm, setIsScreenSizeSm] = useState(window.innerWidth <= 640);
 
@@ -38,7 +38,7 @@ const RollingGallery = ({ autoplay = false, pauseOnHover = false, images = [], I
       autoplayRef.current = setInterval(() => {
         controls.start({
           rotateY: rotation.get() - (360 / faceCount),
-          transition: { duration: 2, ease: "linear" },
+          transition: { duration: 5, ease: "easeInOut" },
         });
         rotation.set(rotation.get() - (360 / faceCount));
       }, 2000);
@@ -84,8 +84,8 @@ const RollingGallery = ({ autoplay = false, pauseOnHover = false, images = [], I
 
   return (
     <div className="gallery-container">
-        <div className="gallery-gradient gallery-gradient-left"></div>
-        <div className="gallery-gradient gallery-gradient-right"></div>
+      <div className="gallery-gradient gallery-gradient-left"></div>
+      <div className="gallery-gradient gallery-gradient-right"></div>
       <div className="gallery-content">
         <motion.div
           drag="x"

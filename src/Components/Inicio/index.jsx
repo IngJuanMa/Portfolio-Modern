@@ -22,11 +22,11 @@ const Incio = () => {
                 </div>
                 <img className='foto' src='/fotojuan.png' alt='FotoJuan' />
                 <div className='listaredesboton'>
-                    <ul className='listaredes'>
-                        <li><a href='https://www.linkedin.com/in/juan-manuel-castro-chavarro-9b0128262/'></a><FaLinkedin className='red'/></li>
-                        <li><a href='https://github.com/IngJuanMa'></a><FaGithub className='red'  /></li>
-                        <li><a href='https://www.instagram.com/manuel.280/'></a><FaInstagram className='red' /></li>
-                    </ul>
+                    <div className='listaredes'>
+                        <a href='https://www.linkedin.com/in/juan-manuel-castro-chavarro-9b0128262/'></a><FaLinkedin className='red'/>
+                        <a href='https://github.com/IngJuanMa'></a><FaGithub className='red'  />
+                        <a href='https://www.instagram.com/manuel.280/'></a><FaInstagram className='red' />
+                    </div>
                     <h3 className='cv'> <FaCircleArrowLeft className='flecha'/> About Me</h3>
                 </div>
             </main>

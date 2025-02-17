@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     gap: 15%;
-    background: var(--color-gris);
+    background: #121B1D;
     padding: 20px;
+    height: auto;
 }
 .historia{
     display: flex;

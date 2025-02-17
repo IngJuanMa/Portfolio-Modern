@@ -5,6 +5,7 @@
     background-color: var(--color-gris);
     gap: 20%;
     font-family:var(--font-EB);
+    height: 15vh;
 }
 
 .logo{
@@ -47,5 +48,8 @@
     }
     .logo{
         width: 40px;
+    }
+    .navbar{
+        height: 10vh;
     }
 }
