@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Bowlby+One&family=Dosis:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300;1,300&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Slabo+27px&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Bowlby+One&family=Dosis:wght@200..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300;1,300&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bowlby+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dosis:wght@200..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300;1,300&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Slabo+27px&display=swap');
 
 @font-face {
   font-family: "Cronrox";
@@ -20,5 +21,12 @@
   --font-Cro: "Cronrox", sans-serif;
   --font-inter: "Inter", serif;
   --font-ragille:"ragille", sans-serif;
-  --font-EB:"Quicksand", serif;
+  --font-EB:"DM Sans", serif;
+}
+
+body{
+  background-color: var(--color-gris);
+}
+html {
+  scroll-behavior: smooth;
 }

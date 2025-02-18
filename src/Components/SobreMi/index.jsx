@@ -7,7 +7,6 @@ import { FaHtml5 } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { SiFramer } from "react-icons/si";
-import { FaGlobe, FaFlagUsa } from "react-icons/fa";
 import { MdDesignServices } from "react-icons/md";
 import { IoCodeSlash } from "react-icons/io5";
 import { FaRegLightbulb } from "react-icons/fa";
@@ -18,7 +17,7 @@ import { FaRegLightbulb } from "react-icons/fa";
 
 const SobreMi = () => {
   return (
-    <main className='c-sobremi'>
+    <main className='c-sobremi' id="Sobre_Mi">
       <section className='historia'>
         <h1>About Me</h1>
         <h4 className='tituloinge'>Soy ingeniero agroindustrial y desarrollador front-end especializado en React + Vite.</h4>

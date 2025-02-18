@@ -5,6 +5,7 @@
     background: #121B1D;
     padding: 20px;
     height: auto;
+    scroll-margin-top: 80px;
 }
 .historia{
     display: flex;
@@ -78,7 +79,9 @@
   height: 25vh;
   width: 40%;
   text-align: center;
-  box-shadow: 2px 2px 5px 0px var(--color-naranja);
+  border-right: 1px solid var(--color-naranja);
+  border-bottom: 1px solid var(--color-naranja); 
+  /* box-shadow: 2px 2px 5px 0px var(--color-naranja); */
 }
 
 .listatecnologías{

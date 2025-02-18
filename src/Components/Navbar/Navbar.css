@@ -1,21 +1,29 @@
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-gris);
     gap: 20%;
-    font-family:var(--font-EB);
+    font-family: var(--font-EB);
     height: 15vh;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: #292e3157;
 }
 
-.logo{
+.logo {
     width: 60px;
     padding: 1%;
     border-radius: 250px;
     margin-left: 3%;
 }
 
-.listanav{
+/* Menú de escritorio */
+.listanav {
     display: flex;
     gap: 30px;
     color: white;
@@ -24,32 +32,89 @@
     margin-right: 3%;
 }
 
-.lista{
-    font-size: 0.8em;
+.lista {
+    font-size: 1.1em;
     text-decoration: none;
     color: white;
 }
-.lista:hover{
+
+.highlight {
+    background-color: var(--color-naranja);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+    border: 1px solid var(--color-naranja);
+}
+
+.highlight:hover{
+    border: 1px solid var(--color-naranja);
+    background-color: white;
+}
+
+.lista:hover {
     color: var(--color-naranja);
 }
-.menu{
+
+/* Ícono de menú hamburguesa */
+.menu-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Ocultar menú hamburguesa en escritorio */
+.hamburger {
     display: none;
 }
 
-@media (max-width:480px){
-    .lista{
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .listanav {
         display: none;
     }
-    .menu{
+
+    .hamburger {
         display: block;
-        width: 20px;
-        height: 20px;
         margin-right: 10px;
     }
-    .logo{
+
+    .logo {
         width: 40px;
     }
-    .navbar{
+
+    .navbar {
         height: 10vh;
+        padding: 0 10px;
+    }
+
+    /* Menú desplegable */
+    .mobile-menu {
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        width: 70%;
+        background: linear-gradient(133deg, rgba(34, 34, 34, 1) 76%, rgba(237, 95, 68, 1) 100%);
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+
+    .mobile-menu li {
+        list-style: none;
+        padding: 10px 20px;
+    }
+
+    .menu-item {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .menu-item:hover {
+        color: var(--color-naranja);
     }
 }

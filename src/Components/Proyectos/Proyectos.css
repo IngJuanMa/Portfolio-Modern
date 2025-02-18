@@ -1,10 +1,11 @@
 .c-proyects{
     background: var(--color-gris);
     padding: 5%;
+    scroll-margin-top: 80px;
 }
 .c-proyects h1{
     margin: 0;
-    font-family: var(--font-ragille);
+    font-family: var(--font-EB);
     color: var(--color-naranja);
     text-align: center;
     font-size: 1em;
@@ -13,6 +14,7 @@
     text-align: center;
     font-size: 1.4em;
     color: white;
+    margin-bottom: 0;
 }
 .c-im-proyec{
     display: flex;
@@ -25,6 +27,7 @@
 .c-im-proyec-uni{
     box-sizing: border-box;
     width: 100%;
+    margin: 10px 0;
 }
 
 .c-im-proyec-uni h2{
@@ -36,6 +39,7 @@
 
 .c-im-proyec-uni p{
     font-size: 0.9em;
+    margin-bottom: 15px;
 }
 .c-im-proyec-uni a{
     display:flex;
@@ -44,7 +48,7 @@
     color: var(--color-naranja);
     gap: 10px;
     font-family: var(--font-EB);
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 @media (min-width: 1024px) {

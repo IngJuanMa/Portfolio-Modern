@@ -10,7 +10,7 @@ import { FaCircleArrowLeft } from "react-icons/fa6";
 const Incio = () => {
     return (
         <>
-            <main className='contenedor'>
+            <main className='contenedor' id='Inicio'>
                 <div className='texto'>
                     <p> 👋 Hi, i'm Juan Manuel</p>
                     <h1 >Front-End</h1>
