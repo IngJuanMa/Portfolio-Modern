@@ -28,18 +28,33 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <img src="/LogoJuan.png" alt="Logo" className="logo" />
+      <motion.img
+        initial={{ y: -50 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.7 }}
+        src="/LogoJuan.png"
+        alt="Logo"
+        className="logo" />
 
       {/* Ícono de menú hamburguesa SOLO en pantallas pequeñas */}
       {isMobile && (
-        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        <motion.div
+          initial={{ y: -50 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="hamburger"
+          onClick={() => setMenuOpen(!menuOpen)}>
           <RxHamburgerMenu className="menu-icon" />
-        </div>
+        </motion.div>
       )}
 
       {/* Menú normal en pantallas grandes */}
       {!isMobile && (
-        <ul className="listanav">
+        <motion.ul
+          initial={{ x: 60 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="listanav">
           {NavMenu.map((item, index) => (
             <li key={item.id}>
               <a
@@ -50,7 +65,7 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-        </ul>
+        </motion.ul>
       )}
 
       {/* Menú desplegable en pantallas pequeñas */}

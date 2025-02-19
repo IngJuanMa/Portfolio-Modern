@@ -205,9 +205,9 @@
     } */
     .contenedor{
         /* display: grid; */
-        padding-top: 3%;
+        padding-top: 1%;
         height: 90vh;
-        justify-content: center;
+        /* justify-content: center; */
     }
     .listaredesboton{
         margin-top: 10%;
