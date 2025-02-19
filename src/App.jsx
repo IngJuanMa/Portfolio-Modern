@@ -11,10 +11,9 @@ const App = () => {
     <main>
       <Navbar />
        <Incio />
-      
-      {/*<SobreMi />
+      <SobreMi />
       <Proyects />
-      <Contact />  */}
+      <Contact /> 
     </main>
   )
 }
